@@ -7,12 +7,18 @@ class Tomteland{
             "Tröger", "Trötter", "Blyger", "Rådjuret", "Nyckelpigan", "Haren", "Räven",
             "Skumtomten", "Gråsuggan", "Butter", "Myran",
             "Dammråttan", "Bladlusen"))
+
         hashMap.put("Glader", listOf("Tröger", "Trötter", "Blyger", "Dammråttan", "Skumtomten"))
-        hashMap.put("Butter", listOf("Rådjuret", "Nyckelpigan", "Haren", "Räven", "Gråsuggan", "Myran", "Bladlusen"))
-        hashMap.put("Trötter", listOf("Dammråttan", "Skumtomten"))
-        hashMap.put("Skumtomten", listOf("Dammråttan"))
-        hashMap.put("Räven", listOf("Gråsuggan", "Myran", "Bladlusen"))
-        hashMap.put("Myran", listOf("Bladlusen"))
+
+            hashMap.put("Butter", listOf("Rådjuret", "Nyckelpigan", "Haren", "Räven", "Gråsuggan", "Myran", "Bladlusen"))
+
+                hashMap.put("Trötter", listOf("Dammråttan", "Skumtomten"))
+
+                    hashMap.put("Skumtomten", listOf("Dammråttan"))
+
+                        hashMap.put("Räven", listOf("Gråsuggan", "Myran", "Bladlusen"))
+
+                            hashMap.put("Myran", listOf("Bladlusen"))
     }
 
     fun getUnderlings(currentName: String, res: MutableList<String>): List<String> {
