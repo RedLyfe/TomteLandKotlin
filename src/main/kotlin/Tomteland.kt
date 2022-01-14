@@ -38,8 +38,5 @@ fun main() {
     val tomteland = Tomteland()
 
     val list: MutableList<String> = mutableListOf()
-    val name: String = readLine()!!.toString()
-
-    print("This is the undlerlings for $name: ")
-    println(tomteland.getUnderlings(name, list))
+    println(tomteland.getUnderlings("Glader", list))
 }
