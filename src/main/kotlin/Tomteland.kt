@@ -3,20 +3,17 @@ class Tomteland{
 
     var hashMap : HashMap<String, List<String>> = HashMap()
     init {
-        hashMap.put("Tomten", listOf( "Glader", "Butter",
-            "Tröger", "Trötter", "Blyger", "Rådjuret", "Nyckelpigan", "Haren", "Räven",
-            "Skumtomten", "Gråsuggan", "Butter", "Myran",
-            "Dammråttan", "Bladlusen"))
+        hashMap.put("Tomten", listOf( "Glader", "Butter"))
 
-        hashMap.put("Glader", listOf("Tröger", "Trötter", "Blyger", "Dammråttan", "Skumtomten"))
+        hashMap.put("Glader", listOf("Tröger", "Trötter", "Blyger"))
 
-            hashMap.put("Butter", listOf("Rådjuret", "Nyckelpigan", "Haren", "Räven", "Gråsuggan", "Myran", "Bladlusen"))
+            hashMap.put("Butter", listOf("Rådjuret", "Nyckelpigan", "Haren", "Räven"))
 
-                hashMap.put("Trötter", listOf("Dammråttan", "Skumtomten"))
+                hashMap.put("Trötter", listOf("Skumtomten"))
 
                     hashMap.put("Skumtomten", listOf("Dammråttan"))
 
-                        hashMap.put("Räven", listOf("Gråsuggan", "Myran", "Bladlusen"))
+                        hashMap.put("Räven", listOf("Gråsuggan", "Myran"))
 
                             hashMap.put("Myran", listOf("Bladlusen"))
     }
