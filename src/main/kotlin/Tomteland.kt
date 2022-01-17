@@ -27,7 +27,7 @@ class Tomteland{
                 }
             }
         }
-        return res.distinct()
+        return res
     }
 }
 
