@@ -2,6 +2,7 @@
 class Tomteland{
 
     var hashMap : HashMap<String, List<String>> = HashMap()
+
     init {
         hashMap.put("Tomten", listOf( "Glader", "Butter"))
 
@@ -19,15 +20,17 @@ class Tomteland{
     }
 
     fun getUnderlings(currentName: String, res: MutableList<String>): List<String> {
+
         hashMap.get(currentName)?.forEach {
             res.add(it)
             if(hashMap.contains(it)) {
                 hashMap.get(it)!!.forEach {
+                    res.add(it)
                     res += getUnderlings(it, res)
                 }
             }
         }
-        return res
+        return res.distinct()
     }
 }
 
